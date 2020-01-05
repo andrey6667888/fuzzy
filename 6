@@ -1,0 +1,16 @@
+Эхо "экспорт SENDGRID_API_KEY= 'СГ.0T-oR8YyQjarZkNo8I--TQ.3fmAFXspive2XeWMZsEAwpT3jg75Fti1bebtuxuv3qu"Data-translation= "YOUR_API_KEY" data-type= "trSpan" >YOUR_API_KEY '"> sendgrid.env
+Эхо " sendgrid.env">>>>>> .gitignore
+Источник./ sendgrid.env
+npm install --save @sendgrid / 
+// использование узла V3 Twilio SendGrid.библиотека js
+// https://github.com/sendgrid/sendgrid-nodejs
+константа  sgMail  =  требовать ('@sendgrid / mail ');
+сгмайл .сэтапикей ( процесс .env.SENDGRID_API_KEY);
+константа глутамат натрия = {
+ чтобы :  'test@example.com ',
+ от кого :  'test@example.com ',
+ тема:  'отправка с Twilio SendGrid-это весело ',
+ текст :  'и легко сделать в любом месте, даже с узлом.JS',
+ HTML:  '< strong>и легко сделать в любом месте, даже с узлом.js< / strong > < / strong > < / strong> ',
+};
+сгмайл .отправить (глутамат натрия)
